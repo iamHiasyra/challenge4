@@ -21,8 +21,10 @@ body {
     color: var(--white);
     font-family: var(--default_font);
     font-size: 16px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main, section {
