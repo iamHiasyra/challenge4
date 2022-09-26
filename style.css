@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    --default_font: 'Overpass', sans-serif;
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0,0%,100%);
+    --grey: hsl(217, 12%, 63%);
+    --mediumgrey:  hsl(216, 12%, 54%);
+    --blue: hsl(213, 19%, 18%);
+    --lightblue:hsl(213, 19%, 30%);
+    --darkblue: hsl(216, 12%, 8%);
+    --default_size: 15px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--darkblue);
+    color: var(--white);
+    font-family: var(--default_font);
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+main, section {
+    width: max( min(20vw, 400px), 300px );
+    min-height: min(calc(100vh - 22.5rem), 100px);
+    background-color: var(--blue);
+    margin: 2rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+}
+
+section {
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+main > figure {
+    background-color: var(--lightblue);
+    width: 1em;
+    height: 1em;
+    margin: 0;
+    padding: 10px;
+    border-radius: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.point {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.point > button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 100%;
+    background-color: var(--lightblue);
+    color: hsl(0, 0%, 80%);
+}
+
+
+
+button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+
+
+p {
+    color: hsl(0, 0%, 50%);
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+button
+{
+    font-family: var(--default_font);
+}
+.submit {
+    margin-top: 1rem;
+    height: 2rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.75em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: white;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.answer {
+    background-color: var(--lightblue);
+    color: var(--orange);
+    height: 2rem;
+    width: max-content;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+span{
+    display: block;
+    margin: 0 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.gratitude > p {
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
